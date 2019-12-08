@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<script src="js/lib/modernizr.js"></script>
+	<script src="js/lib/pace.js"></script>
+	<script>(function(w){var dpr=((w.devicePixelRatio===undefined)?1:w.devicePixelRatio);if(!!w.navigator.standalone){var r=new XMLHttpRequest();r.open('GET','/retinaimages.php?devicePixelRatio='+dpr,false);r.send()}else{document.cookie='devicePixelRatio='+dpr+'; path=/'}})(window)</script>
+	<style type="text/css">
+	#apDiv4 {
+	position: absolute;
+	width: 185px;
+	height: 115px;
+	z-index: 12;
+	left: 634px;
+	top: 814px;
+}
+    </style>
+<noscript><style id="devicePixelRatio" media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">
+	html{background-image:url("/retinaimages.php?devicePixelRatio=2")}#apDiv2 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 12;
+	left: 960px;
+	top: 73px;
+}
+    </style></noscript>
+	
+	<title>CTF心得</title>
+	
+	<meta name="robots" content="index, nofollow">
+	<meta name="description" content="Your website description here">
+	<meta name="keywords" content="your, website, keywords, here">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="stylesheet" href="css/lib/font-awesome.min.css">
+	<link rel="stylesheet" href="css/lib/magnific-popup.css">
+	<link rel="stylesheet" href="css/lib/lite.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link rel="shortcut icon" href="images/icon.png">
+</head>
+
+
+<body class="body-push personal auto-close-menu">
+
+
+	<!-- Menu -->
+	<!--<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<a href="#home"><img src="images/bata.png" alt="logo-menu" class="logo"></a>
+			<!--<h1 class="logo"><a href="#home">Focus</a></h1>-->
+			<!--<i class="icon-remove menu-close"></i>-->
+		<!--	<a href="index.html">首頁</a><a href="#home"></a><a href="#process">網站</a><a href="#contact">介紹</a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-envelope"></i></a>  
+		</div>
+		
+		<!-- Menu button -->
+	<!--  <div id="menuToggle"><i class="icon-reorder"></i></div>-->
+	</nav>
+
+	<!-- Portfolio Header -->
+	<div id="top"></div>
+	<div class="header" style="background-image: url('images/fornt.png');">
+		<div class="header-center fade-in">
+		  <h1 class="fittext white"></h1>
+			<h3 class="white"></h3>
+			<p><a href="index.html" class="button white-border">回首頁</a></p>
+		</div>
+	</div>
+
+
+	<!-- Portfolio Introduction -->
+	<section id="portfolio-introduction" class="portfolio-introduction">
+		
+		<!-- Title -->
+<div class="row">
+			<div class="ten columns offset-by-one title">
+				
+				<h2>CTF</h2>
+				<hr>
+			</div>
+</div>
+		
+	  <div class="row text-left" id="slides">
+		
+			<!-- Introduction -->
+<div class="ten columns">
+			  <h3></h3>
+				<p>這是我摸了很久了CTF心得</p>
+				<p>因緣際會上了教育部主辦的資安體驗 開啟我眼界</p>
+				<p>但是我認為資安入門是一件很難的事情</p>
+				<P>而這張網頁我是要拿來放備忘用的</p>
+				<hr>
+				<p>第一個:VIM</p>
+				<p>離開-->:q</p>
+				<p>儲存-->:w</p>
+				<p>刪除整行-->dd</p>
+				<p>跳到最後一行-->G</p>
+				<p>跳到第一行-->gg</p>
+				<p>取代字元 :1,$s/.*,/ /g (1到最後 前開頭找到第一個','取代成' ')</p>
+				<hr>
+				<p>Linux 指令
+				<p>可執行權限 chmod +x file
+				<p>看檔案類型 file
+				<p>抓字串 string file
+				<p>看 syscall,signal strace file
+				<p>看 libcall ltrace file
+				
+				
+				<hr>
+				<p>gdb
+				
+				<p>下斷點 b main || b *0xd011
+				<p>執行程式 r
+				<p>繼續執行 c
+				<p>完成func() fin
+				<p>執行(in to func) si
+				<p>執行(not in to func) ni
+				<p>離開 q
+				<p>印出變數 p $rbp 
+				<p>印出記憶體 x  $rbp || x 0x111
+				<p>查看保護機制 checksec
+				<p>查看記憶體 vmmap
+				<p>跳 jump *0x6969
+				<p>改變記憶體 ,暫存器 set $rsp=0x6969 || set{int}0x6969=2
+				<p>查看斷點 info break 
+				<p>查看reg info register
+				
+				<hr>
+				<p>編譯關閉canary  gcc t.c -o t.exe -fno-stack-protector
+				<hr>
+				<p>objdump -M intel -d file
+				<hr>
+				rbp base pointer
+				rsp top pointer
+				<hr>
+				<p>radare2
+				<p>開檔案(可寫) r2 -w file 
+			<p>	分析 aa,aaa
+			<p>	列出 func afl
+			<p>	移動到 s main ||s 0x6969
+			<p>	列出組語 pd ||pd 5
+		<p>		退出 q
+			<p>	進入 hex mode V
+			<p>	用 i 改hex
+				<p>用 A 改組語
+				<hr>
+				<p>python</p>
+				<p>./file `python -c"print '\x01'*20"`</p>				
+				
+				
+				<p>&nbsp;</p>
+			  
+  <p align="left">&nbsp;</p>
+  <p>&nbsp;</p>
+  <div id="apDiv1">
+    <style>
+               #apDiv1 {
+	position: absolute;
+	top: 300px;
+	left:-200px;
+}</style>
+  </div>
+ 
+  <p>&nbsp;</p>
+</div>
+
+			<!-- Project Data -->
+<div class="one columns column-border">
+			<!--	<h3 class="grey">Blender初步</h3>-->
+				<ul class="icons-ul projectdata-ul">
+					<li><i class="icon-li icon-user"></i>Zheyee</li>
+			<!--		<li><i class="icon-li icon-tag"></i></li>>-->
+			<li><em class="icon-li icon-time"></em>2018/12/10</li>
+			<!--		<li><i class="icon-li icon-globe"></i><a href="#"></a>http://tyinfob.3eeweb.com</li>>-->
+				</ul>
+</div>
+<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/classie.js"></script>
+	<script src="js/lib/smoothscroll.js"></script>
+
+	<script src="js/lib/jquery.superslides.min.js"></script>
+	<script src="js/lib/jquery.sudoslider.min.js"></script>
+	<script src="js/lib/jquery.mixitup.min.js"></script>
+	<script src="js/lib/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
